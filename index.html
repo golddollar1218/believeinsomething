@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Believe In Something — $BELIEVE</title>
+  <meta name="description" content="Believe In Something. $BELIEVE on Robinhood Chain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syne:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="orb orb-c" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav-brand" href="#top" aria-label="Believe In Something home">
+      <img src="logo.jpg" alt="" width="36" height="36" />
+      <span>$BELIEVE</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#howtobuy">How To Buy</a>
+      <a href="#memes">Memes</a>
+    </nav>
+    <a class="nav-cta" href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer">Buy Now</a>
+  </header>
+
+  <main id="top" class="sequence-page">
+    <!-- Walk sequence: person pushing boulder (original scroll effect) -->
+    <section class="walk-sequence" id="walk-sequence" style="--sequence-scroll-distance:1104px" aria-label="BELIEVE IN SOMETHING">
+      <div class="sequence-stage">
+        <div class="sequence-artwork">
+          <img class="sequence-fallback" src="assets/walk-frames/ezgif-frame-001.png" alt="" width="2206" height="946" fetchpriority="high" />
+          <canvas class="sequence-canvas" id="sequence-canvas" width="2206" height="946" data-ready="false" aria-hidden="true"></canvas>
+          <h1 class="sequence-words" aria-label="BELIEVE IN SOMETHING">
+            <span class="sequence-word" data-word style="left:39.266666666666666%;top:34.52566096423017%;font-size:5vw" aria-hidden="true">BELIEVE</span>
+            <span class="sequence-word" data-word style="left:50.8%;top:48.98911353032659%;font-size:5vw" aria-hidden="true">IN</span>
+            <span class="sequence-word" data-word style="left:56.39999999999999%;top:63.45256609642301%;font-size:5vw" aria-hidden="true">SOMETHING</span>
+          </h1>
+        </div>
+        <div class="scroll-prompt" id="scroll-prompt" data-visible="true">
+          <p class="scroll-prompt-copy">SCROLL<br />TO<br />BELIEVE</p>
+          <span class="scroll-prompt-motion" aria-hidden="true"><span class="scroll-prompt-thumb"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-flow">
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="about-stage">
+        <div class="about-visual reveal" data-reveal>
+          <div class="about-tweets">
+            <div class="tweet-embed about-tweet">
+              <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+                <p lang="en" dir="ltr">believe in something</p>
+                &mdash; Robinhood Crypto (@RobinhoodCrypto)
+                <a href="https://x.com/RobinhoodCrypto/status/1877398691905945668?ref_src=twsrc%5Etfw">January 9, 2025</a>
+              </blockquote>
+            </div>
+            <div class="tweet-embed about-tweet">
+              <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+                <p lang="en" dir="ltr">believe in something</p>
+                &mdash; WallStreetBets (@wallstreetbets)
+                <a href="https://x.com/wallstreetbets/status/2078545958619488568?ref_src=twsrc%5Etfw">July 18, 2026</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal" data-reveal>
+          <p class="eyebrow">Origin</p>
+          <h2 id="about-heading">About</h2>
+
+          <div class="about-definition">
+            <span class="about-word">believe</span>
+            <span class="about-ipa">bə-ˈlēv</span>
+            <p>
+              to have a firm <em>conviction</em> as to the goodness, efficacy,
+              or ability of someone or <em>something</em>
+            </p>
+          </div>
+
+          <p class="about-lead">
+            Robinhood Crypto left a private key in their API docs.
+            The community turned that Easter egg into <strong>$BELIEVE</strong> —
+            a meme movement on Robinhood Chain.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">
+              <span class="about-point-label">Chain</span>
+              <span class="about-point-value">Robinhood</span>
+            </div>
+            <div class="about-point">
+              <span class="about-point-label">Spirit</span>
+              <span class="about-point-value">Conviction</span>
+            </div>
+            <div class="about-point">
+              <span class="about-point-label">Purpose</span>
+              <span class="about-point-value">Entertainment</span>
+            </div>
+          </div>
+
+          <a
+            class="about-link"
+            href="https://x.com/BelieveHoodRH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read the full lore on X
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section id="tokenomics" class="tokenomics">
+      <div class="section-head reveal" data-reveal>
+        <h2>TOKENOMICS</h2>
+      </div>
+
+      <div class="token-grid tok-token reveal" data-reveal>
+        <div class="token-art">
+          <div class="token-ring"></div>
+          <img src="assets/token-icon.png" alt="$BELIEVE token artwork" />
+        </div>
+        <div class="token-info">
+          <p class="eyebrow">The Token</p>
+          <h2>$BELIEVE</h2>
+          <p class="token-name">Believe In Something</p>
+          <div class="address-row">
+            <code id="contract" title="0xcomingsoon">0xcomingsoon</code>
+            <button type="button" class="copy-btn" id="copy-btn" aria-label="Copy contract address">
+              <img src="assets/icons/copy.png" alt="" class="icon-copy" />
+              <img src="assets/icons/check.png" alt="" class="icon-check" />
+            </button>
+          </div>
+          <div class="token-links">
+            <a href="https://dexscreener.com/robinhood/0xcomingsoon" target="_blank" rel="noopener noreferrer" aria-label="DexScreener">
+              <img src="assets/icons/dex.png" alt="" />
+            </a>
+            <a href="https://x.com/BelieveHoodRH" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+              <img src="assets/icons/x.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tok-stats">
+        <article class="stat reveal" data-reveal>
+          <span class="stat-label">Total Supply</span>
+          <strong class="stat-value" data-count="1000000000">0</strong>
+        </article>
+        <article class="stat reveal" data-reveal>
+          <span class="stat-label">Buy / Sell Tax</span>
+          <strong class="stat-value accent-text">0% / 0%</strong>
+        </article>
+        <article class="stat reveal" data-reveal>
+          <span class="stat-label">Network</span>
+          <strong class="stat-value">Robinhood</strong>
+        </article>
+        <article class="stat reveal" data-reveal>
+          <span class="stat-label">Ticker</span>
+          <strong class="stat-value accent-text">SOMETHING</strong>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section id="howtobuy" class="howtobuy">
+      <div class="section-head reveal" data-reveal>
+        <h2>How To Buy</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal" data-reveal style="--i:0">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>Get a Wallet</h3>
+            <p>Use a wallet that supports Robinhood Chain (e.g. MetaMask or Rabby). Keep your seed phrase offline and sacred.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal style="--i:1">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>Fund with ETH</h3>
+            <p>Bridge or deposit ETH onto Robinhood Chain so you can pay gas and swap into $BELIEVE.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal style="--i:2">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>Open Uniswap</h3>
+            <p>Connect your wallet to Uniswap on the Robinhood network. Paste the official contract address below.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal style="--i:3">
+          <span class="step-num">04</span>
+          <div class="step-body">
+            <h3>Swap & Believe</h3>
+            <p>Swap ETH → $BELIEVE, confirm the address, then welcome yourself to the movement.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- MEMES -->
+    <section id="memes" class="memes" data-feather-section>
+      <div class="meme-inner">
+        <div class="section-head reveal" data-reveal>
+          <h2>Memes</h2>
+        </div>
+        <div class="meme-grid">
+          <figure class="meme reveal" data-reveal><img src="assets/memes/areyawinningson.png" alt="Are ya winning, son? $BELIEVE meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/bullieve.png" alt="$BELIEVE bull meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/cliff.png" alt="$BELIEVE cliff meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/definition.png" alt="$BELIEVE definition meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/diceroll.png" alt="$BELIEVE dice roll meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/fork.png" alt="$BELIEVE fork in the road meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/sunset.png" alt="$BELIEVE sunset meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/supernova.png" alt="$BELIEVE supernova meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/sword.png" alt="$BELIEVE sword meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/theworldisyours.png" alt="The world is yours $BELIEVE meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/thinker.png" alt="$BELIEVE thinker meme" loading="lazy" /></figure>
+          <figure class="meme reveal" data-reveal><img src="assets/memes/twodoors.png" alt="$BELIEVE two doors meme" loading="lazy" /></figure>
+        </div>
+      </div>
+      <div class="falling-feather" id="falling-feather" aria-hidden="true">
+        <img src="assets/feather.png" alt="" width="329" height="329" draggable="false" />
+      </div>
+    </section>
+    </div><!-- /.content-flow -->
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://x.com/BelieveHoodRH" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer">Uniswap</a>
+      <a href="https://dexscreener.com/robinhood/0xcomingsoon" target="_blank" rel="noopener noreferrer">DexScreener</a>
+    </nav>
+    <p class="disclaimer">$BELIEVE is a meme coin with no intrinsic value or expectation of financial return. For entertainment purposes only. Not affiliated with Robinhood.</p>
+    <p class="copyright">©2026 — Believe In Something · <a href="https://believeinsometh.ing/" target="_blank" rel="noopener noreferrer">believeinsometh.ing</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
