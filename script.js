@@ -119,7 +119,7 @@
       const pad = clamp(0.04 * vw, 16, 64);
       const maxX = vw - fw - pad;
       const minX = Math.max(pad, maxX - clamp(0.28 * vw, 90, 360));
-      const zigzag = Math.cos(6 * progress * Math.PI);
+      const zigzag = Math.cos(16 * progress * Math.PI);
       const startY = trigger - 0.35 * fh;
       const fadeIn = clamp(progress / 0.04);
       const fadeOut = clamp((1 - progress) / 0.08);

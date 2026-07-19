@@ -345,6 +345,10 @@ footer {
   position: relative;
 }
 
+.feather-range {
+  position: relative;
+}
+
 /* ---------- Falling feather (original zigzag) ---------- */
 
 .falling-feather {
